@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="gurutest">
+
+	<listeners>
+		<listener
+			class-name="com.qa.guru.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="com.guru.qa.util.MyTransformer" />
+		<listener class-name="com.guru.qa.util.TestngListner" />
+	</listeners>
+
+
+	<test name="Regression_Test">
+
+
+		<classes>
+			<class name="com.guru.qa.testcases.LoginTest" />
+			<class name="com.guru.qa.testcases.HomePageTest" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

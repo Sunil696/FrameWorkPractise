@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">gurutest</th></tr><tr><td><a href="#t0">Regression_Test</a></td><td class="num">2</td><td class="num attn">4</td><td class="num attn">1</td><td class="num">108,676</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">gurutest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression_Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.guru.qa.testcases.HomePageTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1611055628213</td><td rowspan="1">37119</td></tr><tr><th colspan="4">Regression_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.guru.qa.testcases.LoginTest</td><td><a href="#m1">loginPageTitleTest</a></td><td rowspan="1">1611055600558</td><td rowspan="1">12</td></tr><tr><th colspan="4">Regression_Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.guru.qa.testcases.HomePageTest</td><td><a href="#m2">homePageUserTestt</a></td><td rowspan="1">1611055665336</td><td rowspan="1">1</td></tr><tr class="skippedodd"><td rowspan="3">com.guru.qa.testcases.LoginTest</td><td><a href="#m3">loginPageTitleTest</a></td><td rowspan="3">1611055579289</td><td rowspan="3">16</td></tr><tr class="skippedodd"><td><a href="#m4">loginPageTitleTest</a></td></tr><tr class="skippedodd"><td><a href="#m5">loginPageTitleTest</a></td></tr><tr><th colspan="4">Regression_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.guru.qa.testcases.HomePageTest</td><td><a href="#m6">homePageTitleTest</a></td><td rowspan="1">1611055614606</td><td rowspan="1">9</td></tr><tr class="passedodd"><td rowspan="1">com.guru.qa.testcases.LoginTest</td><td><a href="#m7">loginTest</a></td><td rowspan="1">1611055625434</td><td rowspan="1">1816</td></tr></tbody></table><h2>Regression_Test</h2><h3 id="m0">com.guru.qa.testcases.HomePageTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HDC3-L-6K6R0X2&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\SUNILK~1.BAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7ed070bf1334b537dd89fa9d5fd8ff85
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at com.guru.qa.base.TestBase.initilization(TestBase.java:60)
+	at com.guru.qa.testcases.HomePageTest.setup(HomePageTest.java:22)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.guru.qa.testcases.LoginTest#loginPageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [failuretest] but found [Guru99 Bank Home Page]
+	at com.guru.qa.testcases.LoginTest.loginPageTitleTest(LoginTest.java:29)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.guru.qa.testcases.HomePageTest#homePageUserTestt</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.000
+  (Session info: chrome=87.0.4280.141)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HDC3-L-6K6R0X2&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\SUNILK~1.BAT\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:18588}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7ed070bf1334b537dd89fa9d5fd8ff85
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at com.guru.qa.base.TestBase.initilization(TestBase.java:60)
+	at com.guru.qa.testcases.HomePageTest.setup(HomePageTest.java:22)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.guru.qa.testcases.LoginTest#loginPageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [failuretest] but found [Guru99 Bank Home Page]
+	at com.guru.qa.testcases.LoginTest.loginPageTitleTest(LoginTest.java:29)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.guru.qa.testcases.LoginTest#loginPageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [failuretest] but found [Guru99 Bank Home Page]
+	at com.guru.qa.testcases.LoginTest.loginPageTitleTest(LoginTest.java:29)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.guru.qa.testcases.LoginTest#loginPageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [failuretest] but found [Guru99 Bank Home Page]
+	at com.guru.qa.testcases.LoginTest.loginPageTitleTest(LoginTest.java:29)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.guru.qa.testcases.HomePageTest#homePageTitleTest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.guru.qa.testcases.LoginTest#loginTest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

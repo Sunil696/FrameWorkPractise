@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [gurutest]">
+  <listeners>
+    <listener class-name="com.qa.guru.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.guru.qa.util.MyTransformer"/>
+  </listeners>
+  <test name="Regression_Test(failed)">
+    <classes>
+      <class name="com.guru.qa.testcases.LoginTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.guru.qa.testcases.LoginTest -->
+      <class name="com.guru.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="homePageUserTestt"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.guru.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Regression_Test(failed) -->
+</suite> <!-- Failed suite [gurutest] -->
