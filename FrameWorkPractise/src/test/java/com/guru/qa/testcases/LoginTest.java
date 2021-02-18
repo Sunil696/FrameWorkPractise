@@ -28,6 +28,7 @@ public class LoginTest extends TestBase {
 		String title = loginpage.validateLoginPageTitle();
 		Assert.assertEquals(title, "failuretest");
 		//Guru99 Bank Home Page
+		//System.out.println("this is sample test");
 	}
 	
 	@Test(priority=2)
