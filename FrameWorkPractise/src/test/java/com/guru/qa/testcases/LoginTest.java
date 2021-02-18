@@ -34,6 +34,7 @@ public class LoginTest extends TestBase {
 	public void loginTest()
 	{
 	homepage=	loginpage.login(prop.getProperty("uname"), prop.getProperty("password"));
+	//System.out.println("this is sample test");
 	}
 
 	@AfterMethod
