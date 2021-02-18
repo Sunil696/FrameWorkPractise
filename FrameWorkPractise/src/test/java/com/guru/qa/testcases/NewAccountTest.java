@@ -64,6 +64,7 @@ public class NewAccountTest extends TestBase {
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
+		//System.out.println("this is sample");
 	}
 
 }
