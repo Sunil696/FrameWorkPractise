@@ -30,6 +30,7 @@ public class HomePageTest extends TestBase {
 		String title = homepage.toValidateHomePage();
 		Assert.assertEquals(title, "Guru99 Bank Manager HomePage");
 		//System.out.println("sample test");
+		//System.out.println("sample test");
 			}
 
 	@Test(priority = 2)
